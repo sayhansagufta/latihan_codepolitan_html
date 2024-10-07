@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table HTML</title>
+    <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th>Country</th>
+          <th>Ibu kota</th>
+          <th>Populasi</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>Tiongkok</td>
+          <td>Beijing</td>
+          <td>20.963.000</td>
+        </tr>
+
+        <tr>
+          <td>Russia</td>
+          <td>Moskow</td>
+          <td>11.000.000</td>
+        </tr>
+
+        <tr>
+          <td>Jepang</td>
+          <td>Tokyo</td>
+          <td>9.000.000</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th colspan="2">Total</th>
+          <td>34.000.000</td>
+        </tr>
+      </tfoot>
+    </table>
+    <hr />
+
+    <table border="1">
+      <thead>
+        <tr>
+          <th rowspan="2">Tahun</th>
+          <th colspan="3">Morris (2010)</th>
+        </tr>
+        <tr>
+          <th>Populasi</th>
+          <th>Nama</th>
+          <th>
+            Lokasi <br />
+            Sekarang
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td rowspan="3">7000 SM</td>
+          <td rowspan="3">1000</td>
+          <td>Beidha</td>
+          <td>Yordania</td>
+        </tr>
+        <tr>
+          <td>Basta</td>
+          <td>Yordania</td>
+        </tr>
+        <tr>
+          <td>Basta</td>
+          <td>Yordania</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+      </tr>
+      <tr>
+        <td>Maria Sanchez</td>
+        <td>28</td>
+      </tr>
+      <tr>
+        <td>Michael Johnson</td>
+        <td>34</td>
+      </tr>
+    </table>
+
+    <table style="border: 2px solid rgb(140 140 140); font-family: sans-serif">
+      <caption style="caption-side: bottom; margin: 10px">
+        Status of the club members 2021
+      </caption>
+      <thead>
+        <tr style="background-color: rgb(228, 240, 245)">
+          <th scope="col" rowspan="2" style="border: 1px solid rgb(160, 160, 160)">Name</th>
+          <th scope="col" rowspan="2" style="border: 1px solid rgb(160, 160, 160)">ID</th>
+          <th scope="col" colspan="2" style="border: 1px solid rgb(160, 160, 160); padding: 4px 6px">Member Since</th>
+          <th scope="col" rowspan="2" style="border: 1px solid rgb(160, 160, 160); padding: 4px 6px">Balance</th>
+        </tr>
+        <tr style="background-color: rgb(228, 240, 245)">
+          <th scope="col" style="border: 1px solid rgb(160, 160, 160)">Joined</th>
+          <th scope="col" style="border: 1px solid rgb(160, 160, 160)">Canceled</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row" style="border: 1px solid rgb(160, 160, 160); padding: 4px 6px">Margareth Nguyen</th>
+          <td style="border: 1px solid rgb(160, 160, 160); padding: 4px 6px">427311</td>
+          <td style="border: 1px solid rgb(160, 160, 160); padding: 4px 6px"><time datetime="2010-06-03">June 3, 2010</time></td>
+          <td style="border: 1px solid rgb(160, 160, 160); padding: 4px 6px">N/A</td>
+          <td style="border: 1px solid rgb(160, 160, 160); padding: 4px 6px">0.00</td>
+        </tr>
+        <tr>
+          <th scope="row" style="border: 1px solid rgb(160, 160, 160); padding: 4px 6px">Edvard Galinski</th>
+          <td style="border: 1px solid rgb(160, 160, 160); padding: 4px 6px">533175</td>
+          <td style="border: 1px solid rgb(160, 160, 160); padding: 4px 6px"><time datetime="2011-01-13">January 13, 2011</time></td>
+          <td style="border: 1px solid rgb(160, 160, 160); padding: 4px 6px"><time datetime="2015-05-21">Mei 21, 2015</time></td>
+          <td style="border: 1px solid rgb(160, 160, 160); padding: 4px 6px">37.00</td>
+        </tr>
+        <tr>
+          <th scope="row" style="border: 1px solid rgb(160, 160, 160); padding: 4px 6px">Hoshi Nakamura</th>
+          <td style="border: 1px solid rgb(160, 160, 160); padding: 4px 6px">601942</td>
+          <td style="border: 1px solid rgb(160, 160, 160); padding: 4px 6px"><time datetime="2012-07-23">July 23, 2012</time></td>
+          <td style="border: 1px solid rgb(160, 160, 160); padding: 4px 6px">N/A</td>
+          <td style="border: 1px solid rgb(160, 160, 160); padding: 4px 6px">15.00</td>
+        </tr>
+      </tbody>
+      <tfoot style="background-color: rgb(228, 245, 250)">
+        <tr>
+          <th scope="row" colspan="4" style="border: 1px solid rgb(160, 160, 160); padding: 4px 6px">Total Balance</th>
+          <td style="border: 1px solid rgb(160, 160, 160); padding: 4px 6px">52.00</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <table style="border: 1px solid gray; border-collapse: collapse; font-size: 1rem">
+      <caption style="caption-side: bottom; padding: 10px">
+        Council Budget (in &euro;) 2018
+      </caption>
+      <thead style="background-color: bisque">
+        <tr>
+          <th scope="col" style="border: 1px solid gray; background-color: bisque; padding: 20px 20px" rowspan="2">Items</th>
+          <th scope="col" style="border: 1px solid gray; background-color: bisque; padding: 20px 20px" rowspan="2">Expenditure</th>
+        </tr>
+      </thead>
+      <tbody style="background-color: beige">
+        <tr>
+          <th scope="row" style="border: 1px solid gray; background-color: beige; padding: 20px 20px">Donuts</th>
+          <td style="border: 1px solid gray; background-color: beige; text-align: center; padding: 20px 20px">3,00</td>
+        </tr>
+        <tr>
+          <th scope="row" style="border: 1px solid gray; background-color: beige; padding: 20px 20px">Stationery</th>
+          <td style="border: 1px solid gray; background-color: beige; padding: 20px 20px; text-align: center">18,00</td>
+        </tr>
+      </tbody>
+      <tfoot style="background-color: bisque">
+        <tr>
+          <th scope="row" style="border: 1px solid gray; padding: 30px 30px">Totals</th>
+          <td style="text-align: center">21,00</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <table style="border: 1px solid gray">
+      <thead style="background-color: blueviolet; color: white; border: 1px solid gray">
+        <tr>
+          <th style="padding: 10px 10px">Student ID</th>
+          <th style="padding: 10px 10px">Name</th>
+          <th style="padding: 10px 10px">Credits</th>
+        </tr>
+      </thead>
+      <tbody style="background-color: aquamarine">
+        <tr>
+          <th colspan="3" style="background-color: blue; text-align: left; color: white; padding: 5px">Computer Science</th>
+        </tr>
+        <tr>
+          <td style="border: 1px solid gray; padding: 20px 20px">3741255</td>
+          <td style="border: 1px solid gray; padding: 20px 20px">Jones, Martha</td>
+          <td style="border: 1px solid gray; padding: 20px 20px">240</td>
+        </tr>
+        <tr>
+          <th colspan="3" style="background-color: blue; color: white; padding: 5px; text-align: left">Russian Literature</th>
+        </tr>
+        <tr>
+          <td style="border: 1px solid gray; padding: 10px 10px">3971244</td>
+          <td style="border: 1px solid gray; padding: 10px 10px">Nim, Victor</td>
+          <td style="border: 1px solid gray; padding: 10px 10px">220</td>
+        </tr>
+        <tr>
+          <th colspan="3" style="background-color: blue; color: white; padding: 5px; text-align: left">Astrophysics</th>
+        </tr>
+        <tr>
+          <td style="border: 1px solid gray; padding: 10px 10px">4100322</td>
+          <td style="border: 1px solid gray; padding: 10px 10px">Petrov, Alexandra</td>
+          <td style="border: 1px solid gray; padding: 10px 10px">185</td>
+        </tr>
+        <tr>
+          <td style="border: 1px solid gray; padding: 20px 10px">5909911</td>
+          <td style="border: 1px solid gray; padding: 20px 10px">Margareth, Elizabeth</td>
+          <td style="border: 1px solid gray; padding: 10px 10px">179</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
