@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Float - HTML / CSS</title>
+    <style>
+      .float-right {
+        max-width: 170px;
+        max-height: 170px;
+        margin-left: 20px;
+        float: right;
+      }
+      .float-left {
+        max-width: 170px;
+        max-height: 170px;
+        margin-left: 20px;
+        float: left;
+      }
+      .float {
+        border-radius: 5px;
+        background: #c0eba6;
+        max-width: 100%;
+        margin: 10px;
+        padding: 20px;
+        min-height: 200px;
+        overflow: auto;
+      }
+      p {
+        font-size: 20px;
+        margin-top: 40px;
+        line-height: 1.8;
+      }
+      .container {
+        border-radius: 5px;
+        background: #c0eba6;
+        max-width: 100%;
+        margin: 10px;
+        padding: 20px;
+        min-height: 200px;
+        overflow: auto;
+      }
+      .clearfix {
+        border-radius: 5px;
+        background: #c0eba6;
+        max-width: 100%;
+        margin: 10px;
+        padding: 20px;
+        min-height: 200px;
+      }
+      .logo_html {
+        max-width: 170px;
+        max-height: 170px;
+        margin-left: 20px;
+        float: right;
+      }
+      .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+      div {
+        float: left;
+        padding: 15px;
+      }
+
+      .div1 {
+        background: red;
+      }
+
+      .div2 {
+        background: yellow;
+      }
+
+      .div3 {
+        background: green;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Float Properti -->
+    <!-- Float : Right -->
+    <div class="float">
+      <img class="float-right" src="Html.png" alt="logo_html" />
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi vitae vero nulla necessitatibus! Tempora, officiis explicabo. Ex at illo est nihil quam, assumenda doloremque corrupti ipsam rem, aspernatur voluptate temporibus!
+        Ipsum, consequatur. Nisi, nihil mollitia in, non ullam id sint dignissimos, saepe perspiciatis temporibus vel. Quas ratione culpa facilis eum dolorum, voluptate inventore, aliquid, voluptatum aut sequi cumque consequatur unde.
+      </p>
+    </div>
+    <!-- Float : Left -->
+    <div class="container">
+      <img src="Html.png" alt="logo_html" class="float-left" />
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi vitae vero nulla necessitatibus! Tempora, officiis explicabo. Ex at illo est nihil quam, assumenda doloremque corrupti ipsam rem, aspernatur voluptate temporibus!
+        Ipsum, consequatur. Nisi, nihil mollitia in, non ullam id sint dignissimos, saepe perspiciatis temporibus vel. Quas ratione culpa facilis eum dolorum, voluptate inventore, aliquid, voluptatum aut sequi cumque consequatur unde.
+      </p>
+    </div>
+
+    <!-- bonus float tutorial -->
+    <h2>Float Next To Each Other</h2>
+
+    <p>In this example, the three divs will float next to each other.</p>
+    <div class="div1">Div 1</div>
+    <div class="div2">Div 2</div>
+    <div class="div3">Div 3</div>
+
+    <!-- Clear dengan pseudo selector -->
+    <div class="clearfix">
+      <img src="Html.png" alt="logo_html" class="logo_html" />
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem aut sint quod at mollitia, inventore, excepturi eveniet soluta expedita ab nam suscipit obcaecati esse laudantium exercitationem animi quasi, quos harum?</p>
+    </div>
+  </body>
+</html>

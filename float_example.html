@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Float - HTML / CSS</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .box {
+        float: left;
+        width: 33.3%;
+        padding: 50px;
+      }
+      .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+      .img-container {
+        float: left;
+        width: 33.3%;
+        padding: 5px;
+      }
+      .clearfix2::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+      .flex-container {
+        display: flex;
+        flex-wrap: nowrap;
+        background-color: dodgerblue;
+      }
+      .flex-container .box {
+        background-color: #f1f1f1;
+        width: 50%;
+        margin: 10px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+      }
+      ul {
+        list-style-type: none;
+        margin-top: 20px;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+      }
+      li {
+        float: left;
+      }
+      li a {
+        text-decoration: none;
+        color: white;
+        display: inline-block;
+        padding: 15px 20px;
+      }
+
+      li a:hover {
+        background-color: #117554;
+        color: white;
+      }
+
+      .active {
+        color: #181c14;
+        background-color: #8fd14f;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Grid of Box</h2>
+    <p>Float box side by side:</p>
+    <div class="clearfix">
+      <div class="box" style="background-color: #bbb">
+        <p>some text inside the box.</p>
+      </div>
+      <div class="box" style="background-color: #ccc">
+        <p>some text inside the box.</p>
+      </div>
+      <div class="box" style="background-color: #ddd">
+        <p>some text inside the box.</p>
+      </div>
+    </div>
+    <!-- Image -->
+    <h2>Images Side by Side</h2>
+    <p>Float images side by side</p>
+
+    <div class="clearfix2">
+      <div class="img-container">
+        <img src="img1 (1).jpg" alt="gambar1" style="width: 100%" />
+      </div>
+
+      <div class="img-container">
+        <img src="img1 (2).jpg" alt="gambar2" style="width: 100%" />
+      </div>
+
+      <div class="img-container">
+        <img src="img1 (3).jpg" alt="gambar3" style="width: 100%" />
+      </div>
+    </div>
+    <!-- flexible boxes -->
+    <h2>Flexible Boxes</h2>
+    <div class="flex-container">
+      <div class="box">
+        <p>Box 1 - This is some text to make sure that the content gets really tall. This is some text to make sure that the content gets really tall.</p>
+      </div>
+      <div class="box">
+        <p>Box 2 - My height will follow Box 1.</p>
+      </div>
+    </div>
+
+    <!-- navbar float -->
+    <ul>
+      <li><a href="#" class="active">Home</a></li>
+      <li><a href="#">News</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">About</a></li>
+    </ul>
+  </body>
+</html>

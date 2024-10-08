@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Model & Overflow</title>
+    <style>
+      body {
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .box-model {
+        background: #87a2ff;
+        color: #001f3f;
+        max-width: 100%;
+        min-height: 100px;
+        margin: 10px;
+        padding: 30px;
+        border: 1px solid #7e60bf;
+        border-radius: 5px;
+      }
+      h1 {
+        color: #b8001f;
+        margin: 0;
+        font-size: 2rem;
+      }
+      p {
+        line-height: 1.5;
+      }
+      .overflow_visible {
+        background: coral;
+        width: 200px;
+        height: 65px;
+        border: 1px solid;
+        overflow: visible;
+      }
+      .overflow_hidden {
+        margin-top: 40px;
+        background: coral;
+        width: 400px;
+        height: 100px;
+        border: 1px solid;
+        overflow: hidden;
+      }
+      .overflow_scroll {
+        margin-top: 40px;
+        background: coral;
+        width: 400px;
+        height: 100px;
+        border: 1px solid;
+        overflow: scroll;
+      }
+      .overflow_auto {
+        margin-top: 40px;
+        background: coral;
+        width: 400px;
+        height: 100px;
+        border: 1px solid;
+        overflow: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Box model Section -->
+    <h1>Demonstrating the box model</h1>
+    <p>The css box model is essentially a box that wraps around every HTML element. It consists of: borders, padding, margin, and the actual content.</p>
+    <div class="box-model">
+      <h1>Notification</h1>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam magnam perspiciatis ex eveniet repellendus. Aut nihil voluptatibus libero nemo modi voluptatum, ut tempore velit recusandae soluta cupiditate incidunt sequi ratione?
+        Fuga laborum, esse libero quas, deleniti fugiat atque sunt aut exercitationem sequi reiciendis, repellat corporis sit quae. Dolor itaque earum reiciendis voluptas ducimus aliquid eos ullam? Consequatur dicta quod beatae. Culpa earum
+        tempore cum necessitatibus quam fugiat minus hic mollitia, odio, vero voluptates fuga corporis recusandae? Incidunt sequi, nemo similique expedita, qui est iste animi quia itaque vel laborum aliquid!
+      </p>
+    </div>
+    <br />
+    <!-- Overflow section -->
+    <!-- Overflow: Visible-->
+    <h2>Overflow : Visible</h2>
+    <p>By default, the Overflow is visible, meaning that is not clipped and it renders outside the element's block.</p>
+    <div class="overflow_visible">
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione excepturi voluptates cupiditate saepe incidunt, error voluptate nihil facilis odit eligendi quos atque? Exercitationem iste illo sint eveniet veritatis omnis minus!
+        Voluptatum, reiciendis laudantium ad eum quis nobis officiis, distinctio, sequi molestiae natus est beatae ullam! Et blanditiis hic, exercitationem corrupti consequatur sint vel, sunt maxime, unde similique veniam vero deleniti!
+        Accusantium exercitationem tempore aut officia error repellat qui animi? At officia quos, facere vitae facilis, consequatur amet, dolor blanditiis necessitatibus corrupti velit magnam nihil omnis natus est fugit saepe dicta.
+      </p>
+    </div>
+
+    <!-- Overflow: Hidden -->
+    <h2>Overflow : Hidden</h2>
+    <p>With the hidden value, the overflow is clipped, and the rest of the content is hidden:</p>
+    <p>Try to remove the overflow property to understand how it works.</p>
+    <div class="overflow_hidden">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam nobis dicta aspernatur dolorem obcaecati hic aperiam ipsam beatae voluptatum quisquam nostrum, est provident quas distinctio corporis aliquid eaque aut minus.
+        Distinctio facilis aliquid nesciunt quisquam tempore et eveniet quibusdam, suscipit fugit odio laudantium praesentium nisi sit voluptas temporibus similique autem voluptate possimus voluptates enim mollitia dicta cum perferendis
+        fugiat! Vero! Optio neque saepe non iste quasi, perferendis quia? Officiis et earum consequatur quaerat voluptatibus accusamus enim excepturi vero esse? Officiis quam, magnam reprehenderit possimus expedita cupiditate itaque nostrum
+        veniam praesentium!
+      </p>
+    </div>
+
+    <!-- Overflow: Scroll -->
+    <h2>Overflow : Scroll</h2>
+    <div class="overflow_scroll">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam nobis dicta aspernatur dolorem obcaecati hic aperiam ipsam beatae voluptatum quisquam nostrum, est provident quas distinctio corporis aliquid eaque aut minus.
+        Distinctio facilis aliquid nesciunt quisquam tempore et eveniet quibusdam, suscipit fugit odio laudantium praesentium nisi sit voluptas temporibus similique autem voluptate possimus voluptates enim mollitia dicta cum perferendis
+        fugiat! Vero! Optio neque saepe non iste quasi, perferendis quia? Officiis et earum consequatur quaerat voluptatibus accusamus enim excepturi vero esse? Officiis quam, magnam reprehenderit possimus expedita cupiditate itaque nostrum
+        veniam praesentium!
+      </p>
+    </div>
+
+    <!-- Overflow: Auto -->
+    <h2>Overflow : Auto</h2>
+    <div class="overflow_auto">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam nobis dicta aspernatur dolorem obcaecati hic aperiam ipsam beatae voluptatum quisquam nostrum, est provident quas distinctio corporis aliquid eaque aut minus.
+        Distinctio facilis aliquid nesciunt quisquam tempore et eveniet quibusdam, suscipit fugit odio laudantium praesentium nisi sit voluptas temporibus similique autem voluptate possimus voluptates enim mollitia dicta cum perferendis
+        fugiat! Vero! Optio neque saepe non iste quasi, perferendis quia? Officiis et earum consequatur quaerat voluptatibus accusamus enim excepturi vero esse? Officiis quam, magnam reprehenderit possimus expedita cupiditate itaque nostrum
+        veniam praesentium!
+      </p>
+    </div>
+  </body>
+</html>

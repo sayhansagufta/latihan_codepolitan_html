@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display HTML</title>
+    <style>
+      li {
+        display: inline;
+        background: orangered;
+        width: 100px;
+        height: 50px;
+        margin: 10px;
+      }
+      /* span {
+        display: block;
+        background: orange;
+        width: 200px;
+        height: 75px;
+        margin: 10px;
+        padding: 30px;
+      }*/
+      .inline-block {
+        display: inline-block;
+        background: orange;
+        width: 100px;
+        height: 50px;
+      }
+      .none {
+        display: none;
+        background: orange;
+        width: 100px;
+        height: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Display Inline -->
+    <!-- tidak membuat baris baru saat dirender -->
+    <!-- lebar dan tinggi sebesar konten yang ada di dalamnya -->
+    <!-- lebar dan tingginya tidak dapat diatur -->
+    <!-- margin dan padding hanya mempengaruhi elemen secra horizontal, tidak vertikal-->
+    <p>Display a list of links as a horizontal menu:</p>
+    <ul>
+      <li><a href="#" target="_blank">HTML</a></li>
+      <li><a href="#" target="_blank">CSS</a></li>
+      <li><a href="#" target="_blank">Javascript</a></li>
+    </ul>
+
+    <!-- Dipslay Block -->
+    <!-- membuat baris baru saat dirender -->
+    <!-- dapat diset lebar dan tingginya -->
+    <!-- bila lebar tidak diset, maka lebar elemen akan memenuhi lebar dari parentnya.-->
+    <!-- di dalamnya dapat disimpan elemen bertipe block, inline dan inline block. -->
+    <h1>Display span element as block element</h1>
+    <span>A display properti with </span><span>a value of "block" results in</span><span>a line break between each span elements.</span>
+
+    <!-- Display inline block -->
+    <!-- tidak ada elemen html yang default bertipe inline-block-->
+    <!-- nilai property display dapat diset manual menjadi inline-block -->
+    <!-- sifat dasar sama dengan inline -->
+    <!-- inline-block akan berpengaruh dari property width dan height -->
+    <h1>Halo Coders!</h1>
+    <p>Selamat datang di <span class="inline-block"> Codepolitan!</span></p>
+
+    <!-- Display none -->
+    <!-- Digunakan untuk menyembunyikan elemen dari layar browser.-->
+    <h1>Halo Coders!</h1>
+    <p>Selamat datang <span class="none">Codepolitan!</span></p>
+  </body>
+</html>
